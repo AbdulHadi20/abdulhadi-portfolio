@@ -1,11 +1,45 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import './src/styles/global.css'
 ---
 
 <Layout>
-	<Welcome />
+
+    <main class="bg-primary h-[100vh] absolute top-0 left-0 right-0 z-[-1]">
+
+    </main>
+    
+    <section class="container mx-auto flex flex-col items-center justify-center gap-10">
+        <p class="text-2xl font-regular text-white text-center mt-10">
+            Hello, I am
+        </p>
+    
+        <img src="/heroimg.svg" alt="Hero Image" class="w-50 h-50 md:w-60 md:h-60 lg:w-80 lg:h-80">
+    
+        <h1 class="lg:text-6xl text-4xl font-bold text-white uppercase">
+            Abdul Hadi
+        </h1>
+    
+        <p class="text-sm lg:text-xl font-light text-white text-center">
+            I build digital experiences that not only look great but feel right. Let’s create something people actually love using.
+        </p>
+    
+        <div class="flex flex-col md:flex-row gap-4">
+            <button class="bg-accent hover:bg-primary px-4 py-2 rounded-xl text-white uppercase font-bold">
+                <a href="#">Contact Me</a>
+            </button>
+    
+            <button class="bg-accent hover:bg-primary px-4 py-2 rounded-xl text-white uppercase font-bold">
+                <a href="#">My Resume</a>
+            </button>
+        </div>
+    
+    </section>
+    
+    <div id="about" class="">
+    
+        <hr class="border-2 border-white rounded-full w-1/2 bg-white h-2">
+        <p class="text-2xl font-regular text-primary text-center mt-10">About</p>
+    </div>
+
 </Layout>
